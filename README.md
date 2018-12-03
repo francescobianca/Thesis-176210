@@ -21,3 +21,12 @@ La repository si divide in 3 parti:
 Sono inoltre presenti una serie di tabelle che contengono test effettuati durante la fase di studio.
 
 Per poter eseguire l'app è necessario disporre di un account Amazon AWS per inserire accessKey e secretKey.
+
+Per lanciare l'UI nella cartella è necessario lanciare
+```javascript 
+npm install 
+```
+ed in seguito il comando:
+```javascript 
+npm start
+```
