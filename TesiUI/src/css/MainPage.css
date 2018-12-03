@@ -1,0 +1,25 @@
+div.news {
+    padding-left: 5%;
+    padding-top: 12%;
+    
+}
+
+#cardElement {
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+#cardMedia {
+    object-fit: cover;
+}
+
+div.progressBar {
+    padding-left: 50%;
+    padding-top: 20%;
+}
+
+div.backgroundDiv {
+    background: url("../image/bg-pattern.png"), #7b4397;
+    background: url("../image/bg-pattern.png"), -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
+    background: url("../image/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
+}

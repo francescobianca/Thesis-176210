@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	
+	<servlet>
+		<servlet-name>RegistrazioneServlet</servlet-name>
+		<servlet-class>controller.Registrazione</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistrazioneServlet</servlet-name>
+		<url-pattern>/registrazione</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>controller.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LeggiSitiServlet</servlet-name>
+		<servlet-class>controller.LeggiSiti</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LeggiSitiServlet</servlet-name>
+		<url-pattern>/leggiSiti</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AggiungiSitiServlet</servlet-name>
+		<servlet-class>controller.AggiungiSiti</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AggiungiSitiServlet</servlet-name>
+		<url-pattern>/aggiungiSiti</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LeggiSitiDaRimuovereServlet</servlet-name>
+		<servlet-class>controller.LeggiSitiDaRimuovere</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LeggiSitiDaRimuovereServlet</servlet-name>
+		<url-pattern>/leggiSitiDaRimuovere</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RimuoviSitiServlet</servlet-name>
+		<servlet-class>controller.RimuoviSiti</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RimuoviSitiServlet</servlet-name>
+		<url-pattern>/rimuoviSiti</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CaricaNewsServlet</servlet-name>
+		<servlet-class>controller.CaricaNews</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CaricaNewsServlet</servlet-name>
+		<url-pattern>/caricaNews</url-pattern>
+	</servlet-mapping>
+	
+	<listener>
+	    <listener-class>
+	        controller.MyAppServletContextListener
+	    </listener-class>
+	</listener>
+	 
+	<listener>
+	    <listener-class>org.quartz.ee.servlet.QuartzInitializerListener</listener-class>
+	</listener>
+
+</web-app>
