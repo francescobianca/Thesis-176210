@@ -22,7 +22,7 @@ public class UpdateNewsDB {
 		SitoDao sDao = DatabaseManager.getInstance().getDaoFactory().getSitoDAO();
 		Sito s = sDao.findByPrimaryKey("www.ilmattino.it");
 		
-		try {
+		/*try {
 			parser.parseSitemap("sitemapNews.xml");
 			News news;
 			for (int i=0; i<parser.sizeSM(); i++) {
@@ -53,7 +53,7 @@ public class UpdateNewsDB {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
+		}*/
 		
 	}
 	

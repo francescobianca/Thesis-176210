@@ -94,7 +94,7 @@ public class CaricaNews extends HttpServlet {
 
 			try {
 
-				String query = " select * from news where \"hostsito\" = ? ";
+				String query = " select * from news where \"hostsito\" = ? order by data desc";
 
 				PreparedStatement statement = connection.prepareStatement(query);
 				statement.setString(1, host);

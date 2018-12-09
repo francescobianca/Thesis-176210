@@ -35,8 +35,8 @@ public class ParserGoogleSM {
 		}
 	}
 
-	public void parseSitemap(String googleSM) throws SAXException, IOException {
-		inputFile = new File(googleSM);
+	public void parseSitemap(File googleSM) throws SAXException, IOException {
+		inputFile = googleSM;
 		doc = dBuilder.parse(inputFile);
 		doc.getDocumentElement().normalize();
 
