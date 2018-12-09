@@ -45,7 +45,7 @@ public class DownloaderSitemap {
 
 		File localFile = new File("/tmp/" + hostName);
 		
-		credenziali = new BasicAWSCredentials("AKIAJPBWMHBQ6Z3LOUBQ", "vpR48uncYawe7fZ9DFTly1Zhugdqk71vKHsGXf2l");
+		credenziali = new BasicAWSCredentials("***AccessKey***", "***SecretKey");
 		s3 = AmazonS3ClientBuilder.standard().withCredentials(new AWSStaticCredentialsProvider(credenziali)).build();
 		
 		// Nel bucket vado ad inserire le google sitemap
